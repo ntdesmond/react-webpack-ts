@@ -63,7 +63,7 @@ export default () => (
       <StyledIcon />
     </StyledMain>
     <footer>
-      Source code available at GitHub!
+      Source code available at <a href="https://github.com/ntdesmond/react-webpack-ts">GitHub</a>!
     </footer>
   </BodyGrid>
 );
