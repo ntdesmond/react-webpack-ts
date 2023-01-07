@@ -1,15 +1,9 @@
 import styled from 'styled-components';
 
 const StyledIcon = styled.div`
-  font-size: 70%;
-  width: 100px;
-  height: 100px;
+  font-family: 'Noto Color Emoji', sans-serif;
 `;
 
-const SomeIcon = () => (
-  <StyledIcon>
-    🐳
-  </StyledIcon>
+export default ({ className }: { className?: string }) => (
+  <StyledIcon className={className}>🐳</StyledIcon>
 );
-
-export default SomeIcon;
