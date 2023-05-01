@@ -19,6 +19,14 @@ module.exports = {
       parserOptions: {
         project: ['./tsconfig.json'],
       },
+      overrides: [
+        {
+          files: ['webpack.*.ts'],
+          rules: {
+            'import/no-extraneous-dependencies': 0,
+          },
+        },
+      ],
     },
   ],
   plugins: ['react', '@typescript-eslint'],
