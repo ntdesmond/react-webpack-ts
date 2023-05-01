@@ -1,10 +1,10 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintWebpackPlugin = require('eslint-webpack-plugin');
-const StylelintWebpackPlugin = require('stylelint-webpack-plugin');
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ESLintWebpackPlugin from 'eslint-webpack-plugin';
+import StylelintWebpackPlugin from 'stylelint-webpack-plugin';
 
-module.exports = {
+const config: webpack.Configuration = {
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -53,3 +53,5 @@ module.exports = {
     clean: true,
   },
 };
+
+export default config;
